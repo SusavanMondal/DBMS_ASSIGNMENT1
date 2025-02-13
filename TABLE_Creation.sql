@@ -1,4 +1,4 @@
-CREATE TABLE Customer (
+CREATE TABLE Customer (  -- create the table Customer
   CustomerID INT,
   FirstName varchar(25),
   LastName varchar(25),
@@ -9,7 +9,7 @@ CREATE TABLE Customer (
 );
 
 
-CREATE TABLE Product (
+CREATE TABLE Product ( --create the table Product
   ProductID INT,
   Name VARCHAR(50),
   Description VARCHAR(50),
@@ -20,7 +20,7 @@ CREATE TABLE Product (
   
 );
 
-CREATE TABLE orders (
+CREATE TABLE orders ( --create the table Order
   CustomerID INT,
   OrderID INT,
   OrderDate DATE,
@@ -31,7 +31,7 @@ CREATE TABLE orders (
   ON DELETE CASCADE
 );
 
-CREATE TABLE OrderDetails (
+CREATE TABLE OrderDetails ( --create the table OrderDetails
   OrderDetailID INT,
   OrderID INT,
   ProductID INT,
